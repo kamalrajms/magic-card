@@ -1,0 +1,845 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* p1 content */
+.p1{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient( #06e8f8, #0044cc);
+}
+.p1logo{
+    font-size: 100px;
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+}
+#hat{
+    rotate: -15deg;
+}
+#hat2{
+    rotate: 20deg;
+}
+.topstar{
+    display: flex;
+    color: red;
+    padding-right: 80px;
+}
+.show{
+    width:740px;
+    height: 150px;
+    background-image: linear-gradient(rgb(251, 255, 0),gold);
+    border-radius: 10px 150px 10px 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 50px;
+}
+.star{
+    padding-left: 75px;
+}
+.p1con1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.p1con2{
+    width: 100vw;
+    height: 40vh;
+    display: flex;
+    align-items:end;
+    justify-content: center;
+}
+.start{
+    color: aliceblue;
+    width: 100px;
+    height: 6.5vh;
+    background-image: linear-gradient(to left,red,rgb(20, 20, 128));
+    border-radius: 15px;
+    box-shadow: 4px 4px 6px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.start:hover{
+    background-image: linear-gradient(to right ,rgb(248, 3, 3),rgb(68, 0, 255));
+    width: 50vh;
+    height: 10vh;
+    transition: .4s;
+}
+
+/* trump content */
+
+.trump{
+    background: url(Screenshot\ \(48\).png)no-repeat center center/cover;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+.round h1{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.round1num{
+    font-size: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+}
+.round{
+    color: white;
+    width: 120px;
+    height: 40px;
+    background:transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    padding-top: 30px;
+}
+.symbol{
+    width: 25px;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    font-size: 25px; 
+    background-color: yellow;
+}
+.symbol i{
+    background-color: yellow;
+}
+.top{
+    background-color: yellow;
+}
+.top .num{
+    font-size: 2rem;
+    margin-left: 7px;
+    background-color: yellow;
+}
+.num b{
+    background-color: yellow;
+}
+.emoj{
+    width: 130px;
+    height: 120px;
+    font-size: 70px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+}
+.emoj i{
+    background-color: yellow;
+}
+.look{
+    padding-left: 5%;
+    padding-top: 340px;
+    display: none;
+}
+.mess{
+    color: white;
+    width: 110px;
+    height: 40px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    border: 1.5px solid black;
+    box-shadow: 0px 0px 3px rgb(10, 10, 10);
+    border-radius: 4.5px;
+
+
+}
+.click {
+    padding: 5px 20px;
+    background-image: linear-gradient(orange,red);
+    border-radius: 15px;
+    border: 2px solid black;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: .8s;
+    box-shadow: 3px 3px 3px rgb(10, 10, 10);
+    margin-left: 5px;
+    cursor: pointer;
+    
+   }
+   .click:hover{
+    transition: .8s;
+    background-image: linear-gradient(red,orange);
+    border: 2px solid rgb(248, 243, 243);
+    color: white;
+    cursor: pointer;
+   }
+.alart1{
+    position: absolute;
+    bottom:8%;
+    left: 30%;
+    width: 450px;
+    height: 210px;
+    background:transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(252, 249, 249);
+    animation-name: okya;
+    animation-duration: 1s;
+    z-index: 4;
+}
+@keyframes okya{
+    from{
+        bottom: 0;
+        opacity: 0;
+    }
+    to{
+       bottom: 8%;
+       opacity: 1;
+    }
+}
+
+.alart1para{
+    padding: 10px;
+}
+.alart1para p{
+    padding: 5px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ok{
+    padding: 3.5px 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(252, 249, 249);
+    cursor: pointer;
+}
+.alart2{
+    width: 300px;
+    height: 150px;
+    background:transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(255, 252, 252);
+    position: absolute;
+    left: 40%;
+    top:10%;
+    animation-name: okya2;
+    animation-duration: 1s;
+    display: none;
+}
+@keyframes okya2{
+    from{
+        top:-200px;
+        left: 40%;
+        opacity: 0;
+    }
+    to{
+        top:10%;
+        left: 40%;
+        opacity:1;
+    }
+}
+#cointainer1{
+    display: none;
+    cursor: pointer;
+}
+#cointainer2{
+    display: none;
+    cursor: pointer;
+}
+#cointainer3{
+    display: none;
+    cursor: pointer;
+}
+/* c1 */
+.mcard {
+    width: 130px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 4px solid white;
+    box-shadow: 5px 5px 5px;
+    color: black;
+    position: absolute;
+    z-index: 3;
+}
+.amcard{
+    top:10%;
+    left:45%;
+    animation-name: revanimation1;
+    animation-duration: 1.3s;
+}
+.dmcard{
+    animation-name: animation1;
+    animation-duration: 1s; 
+    top:55%;
+    left:15%;
+}
+.dmcard-2{
+    animation-name: animation1-2;
+    animation-duration: 1s; 
+    top:54%;
+    left:14.5%;
+}
+.dmcard-3{
+    animation-name: animation1-3;
+    animation-duration: 1s; 
+    top:53%;
+    left:14%;
+}
+@keyframes animation1-3{
+    from{
+        top:10%;
+        left: 45%;
+    }
+    to{
+
+        
+    }
+    
+}
+@keyframes animation1-2{
+    from{
+        top:10%;
+        left: 45%;
+    }
+    to{
+
+        
+    }
+    
+}
+@keyframes animation1{
+    from{
+        top:10%;
+        left: 45%;
+    }
+    to{
+        top:55%;
+        left:15%;
+        
+    }
+    
+}
+@keyframes revanimation1{
+    from{
+        top:55%;
+        left:15%;
+        
+    }
+    to{
+        top:10%;
+        left: 45%;
+        
+    }
+    
+}
+/* c2*/
+.mcard2 {
+    width: 130px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 4px solid white;
+    box-shadow: 5px 5px 5px;
+    color: black;
+    z-index: 2;
+    position: absolute;
+    display: block;
+}
+.amcard2{
+    top:11%;
+    left:45.6%;
+    animation-name: revanimation2;
+    animation-duration: 1.6s;
+}
+.dmcard2 {
+    top:55%;
+    left:45.6%;
+    animation-name: animation2;
+    animation-duration: 1s;
+}
+.dmcard22 {
+    top:54%;
+    left:45%;
+    animation-name: animation22;
+    animation-duration: 1s;
+}
+.dmcard23 {
+    top:53%;
+    left:44.5%;
+    animation-name: animation23;
+    animation-duration: 1s;
+}
+@keyframes animation23{
+    from{
+        top:11%;
+        left: 45.6%;
+    }
+    to{
+        top:53%;
+        left:44.5%;
+        
+    }
+    
+}
+@keyframes animation22{
+    from{
+        top:11%;
+        left: 45.6%;
+    }
+    to{
+        top:54%;
+        left:45%;
+        
+    }
+    
+}
+@keyframes animation2{
+    from{
+        top:11%;
+        left: 45.6%;
+    }
+    to{
+        top:55%;
+        left:45.6%;
+        
+    }
+    
+}
+@keyframes revanimation2{
+    from{
+        top:55%;
+        left:45.6%;
+    }
+    to{
+        top:11%;
+        left: 45.6%;
+    }
+}
+/* c3 */
+.mcard3{
+    width: 130px;
+    height: 200px;
+    background-color: yellow;
+    border-radius: 5px;
+    border: 4px solid white;
+    box-shadow: 5px 5px 5px;
+    color: black;
+    z-index: 1;
+    position: absolute;
+    display: block;
+}
+.amcard3{
+    top:11.9%;
+    left:46.2%;
+    animation-name: revanimation3;
+    animation-duration: 1.9s;
+}
+.dmcard3{
+    top:55%;
+    left:75%;
+    animation-name: animation3;
+    animation-duration: 1s;
+}
+.dmcard32{
+    top:54%;
+    left:74.5%;
+    animation-name: animation32;
+    animation-duration: 1s;
+}
+.dmcard33{
+    top:53%;
+    left:74%;
+    animation-name: animation33;
+    animation-duration: 1s;
+}
+@keyframes animation33{
+    from{
+        top:12%;
+        left:46.2%;
+    }
+    to{
+        top:53%;
+        left:74%;
+        
+    }
+}
+@keyframes animation32{
+    from{
+        top:12%;
+        left:46.2%;
+    }
+    to{
+        top:54%;
+        left:74.5%;
+        
+    }
+}
+@keyframes animation3{
+    from{
+        top:12%;
+        left:46.2%;
+    }
+    to{
+        top:55%;
+        left:75%;
+        
+    }
+}
+@keyframes revanimation3{
+    from{
+        top:55%;
+        left:75%;
+    }
+    to{
+        top:12%;
+        left:46.2%;
+    }
+}
+
+/* page3 */
+.p3{
+    display: none;
+}
+.done nav{
+    position: absolute;
+    width: 150px;
+    height: 60px;
+    background:transparent;
+    top:53.5%;
+    left: 44.5%;
+    border: 2px solid black;
+    box-shadow: 0 0 10px white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: do;
+    animation-duration: 1s;
+}
+nav h1{
+    
+    color: white;
+}
+@keyframes do{
+    from{
+        left: 0;
+    }
+    to{
+        left: 44 .5%;
+    }
+}
+
+/* @media quari */
+@media screen and (max-width:1000px){
+    .mcard{
+        width: 80px;
+        height: 150px;
+    }
+    .mcard2{
+        width: 80px;
+        height: 150px;
+    }
+    .mcard3{
+        width: 80px;
+        height: 150px;
+    }
+    .symbol{
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        padding: 3px 3px 0 3px;
+    }
+    .num b{
+        font-size: 1.5rem;
+    }
+    .top .num{
+        margin-left: 3px;
+    }
+    .emoj{
+        width: 80px;
+        height: 90px;
+        font-size: 60px;
+    }
+    .alart1{
+        width: 310px;
+        height: 160px;
+    }
+    .alart2{
+        width: 200px;
+        height: 120px;
+    }
+    .alart1para p{
+        font-size: 11px;
+        padding: 2.5;
+    }
+    .ok{
+        padding: 2px 5px;
+        font-size: 10px;
+    }
+    .look{
+        padding-top: 200px;
+        padding-left: 3.5%;
+    }
+    .click{
+        font-size: 20px;
+        padding:2.5px 10px;
+        border-radius: 8px;
+    }
+    .mess{
+        width: 70px;
+        height: 30px;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:800px){
+    .p1con1{
+        padding-top: 20px;
+    }
+    .p1 .p1con1 .show{
+        margin-left: 0px;
+        width: 690px;
+        height: 140px;
+    }
+    .p1con1 .show h1{
+        font-size: 27px;
+    }
+    .p1logo{
+        font-size: 90px;
+        width: 690px;
+    }
+    .p1con2{
+        width: 100vw;
+        height: 37vh;
+    }
+}
+@media screen and (max-width:700px){
+    .p1con1{
+        padding-top: 20px;
+    }
+    .p1 .p1con1 .show{
+        margin-left: 0px;
+        width: 640px;
+        height: 130px;
+    }
+    .p1con1 .show h1{
+        font-size: 22px;
+    }
+    .p1logo{
+        font-size: 80px;
+        width: 640px;
+    }
+    .p1con2{
+        width: 100vw;
+        height: 34vh;
+    }
+}
+@media screen and (max-width:650px){
+    .p1con1{
+        padding-top: 20px;
+    }
+    .p1 .p1con1 .show{
+        width: 550px;
+        height: 100px;
+    }
+    .p1con1 .show h1{
+        font-size: 22px;
+    }
+    .p1logo{
+        font-size: 80px;
+        width: 550px;
+    }
+}
+@media screen and (max-width:550px){
+    .p1con1{
+        padding-top: 20px;
+    }
+    .p1 .p1con1 .show{
+        width: 450px;
+        height: 100px;
+    }
+    .p1con1 .show h1{
+        font-size: 17px;
+    }
+    .p1logo{
+        font-size: 70px;
+        width: 450px;
+    }
+    .star{
+        padding-left: 50px;
+    }
+}
+@media screen and (max-width:450px){
+    .p1con1{
+        padding-top: 20px;
+    }
+    .p1 .p1con1 .show{
+        width: 350px;
+        height: 90px;
+    }
+    .p1con1 .show h1{
+        font-size: 13px;
+    }
+    .p1logo{
+        font-size: 65px;
+        width: 350px;
+    }
+    .star{
+        padding-left: 22px;
+    }
+    .topstar{
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width:310px){
+    .p1con1{
+        padding-top: 70px;
+    }
+    .p1 .p1con1 .show{
+        width: 220px;
+        height: 50px;
+        
+    }
+    .p1con1 .show h1{
+        font-size: 10px;
+    }
+    .p1logo{
+        font-size: 55px;
+        width: 250px;
+    }
+    .star{
+        padding-left: 14px;
+    }
+    .topstar{
+        padding-left: 60px;
+    }
+    .round{
+        width: 70px;
+        height: 20px;
+    }
+    .round h1{
+        font-size: 25px;
+    }
+    .round1num{
+        font-size: 23px;
+    }
+    .mcard{
+        width: 80px;
+        height: 150px;
+        border: 2px solid white;
+        box-shadow: 2px 2px 2px;
+        border-radius: 2.5px;
+    }
+    .mcard2{
+        width: 80px;
+        height: 150px;
+        border: 2px solid white;
+        box-shadow: 2px 2px 2px;
+        border-radius: 2.5px;
+    }
+    .mcard3{
+        width: 80px;
+        height: 150px;
+        border: 2px solid white;
+        box-shadow: 2px 2px 2px;
+        border-radius: 2.5px;
+    }
+    .symbol{
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        padding: 3px;
+    }
+    .top .num{
+        font-size: 20px;
+    }
+    .num b{
+        font-size:20px ;
+    }
+    .emoj{
+        width: 80px;
+        height: 90px;
+        font-size: 60px;
+    }
+    .alart1{
+        width: 400px;
+        height: 260px;
+        left: 4%; 
+    }
+    .ok{
+        padding: 7px 12px;
+    }
+    .ok div h3{
+        font-size: 17px;
+    }
+    .look{
+        padding-top:650px;
+        padding-left: 7%;
+    }
+    .click{
+        width: 60px;
+        height: 60px;
+        font-size: 35px;
+        padding: 0;
+    }
+    .mess{
+        margin-bottom: 20px;
+        padding: 7px 10px;
+        font-size: 20px;
+        width:120px ;
+        height: 55px;
+    }
+    .alart1para p{
+        font-size: 20px;
+    }
+    .alart2{
+        width: 350px;
+        height: 170px;
+        left: 12%;
+        top:12%;
+        animation-name: okya2;
+        animation-duration: 1s;
+    }
+    @keyframes okya2{
+        from{
+            top:-200px;
+            left: 13%;
+            opacity: 0;
+        }
+        to{
+            top:12%;
+            left: 13%;
+            opacity:1;
+        }
+    }
+    .done nav{
+        width: 200px;
+        height: 80px;
+        left: 30%;
+        border: .5px solid black;
+        box-shadow: 0 0 5px white;
+        border-radius: 7px;
+    }
+    .done nav h1{
+        font-size: 20px;
+    }
+    .star{
+        font-size: 12px;
+    }
+    #cointainer1 .top #textcon1{
+        font-size: 10px;
+    }
+    #cointainer2 .top #textcon2{
+        font-size: 10px;
+    }
+    #cointainer3 .top #textcon3{
+        font-size: 10px;
+    }
+    
+}
